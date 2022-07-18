@@ -1,7 +1,6 @@
 // Check if input string can be converted to a number, this function is passed to prompt validator
 export default function (input: string): boolean | string {
-    const isNumber = isPositiveInteger(input);
-    if (isNumber) {
+    if (isPositiveInteger(input)) {
         return true;
     }
     return 'Please enter a number.';
